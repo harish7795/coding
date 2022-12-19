@@ -8,12 +8,28 @@
 </head>
 <body>
     <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTPHhwlv_Lzy456Vxg2JasbvMXXc8slssAEbkjHALguTnFW7rwoh_NIrz_VHZpCuZ2H " height="300" width="200" >
-    <p>like</p>
-    <p>unlike</p>
-    <button>like</button>
-    <button>unlike</button>
+    <p id="like">like</p>
+    <p id="unlike">unlike</p>
+    <button onclick=addlike()>like</button>
+    <button onclick=addunlike()>unlike</button>
 </body>
 </html>
 <script>
+    count=0
+    function addlike(){
+        count++
+        console.log("count");
+
+        document.getElementById("like").innerText=count
+
+
+    }
+
+    counti=0;
+    function addunlike(){
+        counti++
+        console.log(counti);
+        document.getElementById("unlike").innerText=count
+    }
 
 </script>
